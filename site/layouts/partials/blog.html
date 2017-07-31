@@ -1,0 +1,18 @@
+<div class="container">
+	<div class='row'>
+		<h2 class="">Blog</h1>
+	</div>
+	<div class='row d-flex align-items-stretch'>
+		
+		{{ range where .Data.Pages "Type" "post" }}
+			<div class="col-md-6">
+				{{ .Render "li" }}
+			</div>
+		{{ end }}
+		
+	</div>
+		<div class="tc">
+			<a href="/post" class="btn raise">Read more</a>
+		</div>
+	</div>
+</div>
