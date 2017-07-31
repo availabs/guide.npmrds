@@ -39,6 +39,11 @@ body {
   height: 100%;
 }
 
+.view-grey {
+  background: #efefef;
+  height: 100%;
+}
+
 .padded {
   padding: 0px;
 }
