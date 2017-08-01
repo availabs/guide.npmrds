@@ -6,15 +6,15 @@
 	</div>
 	<div class='row d-flex align-items-stretch'>
 		
-		{{ range where .Data.Pages "Type" "post" }}
-			<div class="col-md-6">
+		{{ range where .Data.Pages "Type" "guide" }}
+			<div class="col-md-12">
 				{{ .Render "li" }}
 			</div>
 		{{ end }}
 		
 	</div>
 		<div class="tc">
-			<a href="/post" class="btn raise">Read more</a>
+			<a href="/guide" class="btn raise">Read more</a>
 		</div>
 	</div>
 </div>
