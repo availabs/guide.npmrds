@@ -12,11 +12,7 @@
         {{ .Content }}
       </div>
       <div class='row'>
-        {{ range where .Data.Pages "Type" "steps" }}
-          <div class="col-md-12">
-            {{ .Render "li" }}
-          </div>
-        {{ end }}
+        {{ partial "steps" . }}
       </div>
   </div>
 

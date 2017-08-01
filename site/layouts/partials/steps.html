@@ -1,0 +1,9 @@
+<div class="container">
+	<div class='row d-flex align-items-stretch'>
+		{{ range where .Data.Pages "Type" "step" }}
+			<div class="col-md-12">
+				{{ .Render "li" }}
+			</div>
+		{{ end }}
+	<div>
+</div>
