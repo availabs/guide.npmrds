@@ -8,21 +8,23 @@
       </div>
       <div class="cms mw6">
         <p>{{ .Description }}</p>
-        {{ if .Params.image }}<img class='img-fluid' src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+        {{ if .Params.image }}
+          <img class='img-fluid' src="{{ .Params.image }}" alt="{{ .Title }}" />
+        {{ end }}
         {{ .Content }}
-        <h1>{{ .Params.guideNumber}}</h1>
       </div>
       <div class='row'>
         <div class="container">
           <div class='row d-flex align-items-stretch'>
             {{ range where .Site.Pages "Type" "step" }}
-              <div class="col-md-12">
-                {{ .Render "li" }}
-              </div>
+              {{ if eq .Params.guideNumber $.Params.guideNumber }}
+                <div class="col-md-12">
+                  {{ .Render "li" }}
+                </div>
+              {{ end }}
             {{ end }}
           <div>
         </div>
-
       </div>
   </div>
 

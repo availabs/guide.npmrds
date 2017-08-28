@@ -7,7 +7,7 @@
 	<div class='row d-flex align-items-stretch'>
 		
 		{{ range where .Data.Pages "Type" "guide" }}
-			<div class="col-md-12">
+			<div class="col-md-6">
 				{{ .Render "li" }}
 			</div>
 		{{ end }}
