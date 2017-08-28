@@ -5,6 +5,7 @@ body {
   padding: 0;
   height: 100%;
 }
+
 .bold-text{
   font-weight: 500;
   font-size: 1.35em;
@@ -159,30 +160,41 @@ body {
 }
 
 .custom-nav {
-  color: white;
+  color: #5d5d5d;
   font: "Fira Sans"
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: rgba(255,255,255,1);
+  color: rgba(93,93,93,1);
 }
 
 .navbar-inverse .navbar-nav .nav-link:hover {
-  color: rgba(255,255,255,.7);
+  color: rgba(93,93,93,.7);
+}
+
+.navbar-inverse .navbar-nav .nav-link.active {
+  color: rgba(93,93,93,1);
 }
 
 .navbar-nav .active  {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #5d5d5d;
+  color: #5d5d5d;
+}
+
+.Nav-selected{
+  color: #333;
 }
 
 .util-nav .active  {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #5d5d5d;
+  color: #5d5d5d;
 }
 
 
 .custom-nav .nav-item a {
   font-size: 14px!important;
   font-family: 'Fira Sans', sans-serif;
+  color: #5d5d5d;
 }
 
 .custom-nav .nav-item{
@@ -198,11 +210,20 @@ body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 2.1em!important;
   font-weight: 500;
+  color: #5d5d5d;
 }
 
+.navbar-brand{
+  color: #5d5d5d!important;
+}
 
  .nav-link {
-  color: #333;
+  color: #5d5d5d;
+  font-size: 15px;
+}
+
+ .active > .nav-link {
+  color: #5d5d5d !important;
   font-size: 15px;
 }
 
@@ -220,8 +241,6 @@ body {
     padding-left: 1rem;
   }
 }
-
-<<<<<<< HEAD
 
 html,
 body {
