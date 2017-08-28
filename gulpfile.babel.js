@@ -87,23 +87,21 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
     }
   });
   saneWatch("./src/js/**/*.js", () => {
-    gulp.start('js')
+    gulp.start("js");
   });
   saneWatch("./src/css/**/*.css", () => {
-    gulp.start('css')
+    gulp.start("css");
   });
   saneWatch("./src/cms/*", () => {
-    gulp.start('cms')
+    gulp.start("cms");
   });
   saneWatch("./site/static/img/icons/*.svg", () => {
-    gulp.start('svg')
+    gulp.start("svg");
   });
   saneWatch("./site/**/*", () => {
-    gulp.start('hugo')
+    gulp.start("hugo");
   });
 });
-
-
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
