@@ -10,9 +10,19 @@
         <p>{{ .Description }}</p>
         {{ if .Params.image }}<img class='img-fluid' src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
         {{ .Content }}
+        <h1>{{ .Params.guideNumber}}</h1>
       </div>
       <div class='row'>
-        {{ partial "steps" . }}
+        <div class="container">
+          <div class='row d-flex align-items-stretch'>
+            {{ range where .Site.Pages "Type" "step" }}
+              <div class="col-md-12">
+                {{ .Render "li" }}
+              </div>
+            {{ end }}
+          <div>
+        </div>
+
       </div>
   </div>
 

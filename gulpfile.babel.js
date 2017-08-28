@@ -12,6 +12,7 @@ import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import replace from "gulp-replace";
 import cssnano from "cssnano";
+var saneWatch = require('gulp-sane-watch');
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
@@ -85,12 +86,24 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
       baseDir: "./dist"
     }
   });
-  gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./src/cms/*", ["cms"]);
-  gulp.watch("./site/static/img/icons/*.svg", ["svg"]);
-  gulp.watch("./site/**/*", ["hugo"]);
+  saneWatch("./src/js/**/*.js", () => {
+    gulp.start('js')
+  });
+  saneWatch("./src/css/**/*.css", () => {
+    gulp.start('css')
+  });
+  saneWatch("./src/cms/*", () => {
+    gulp.start('cms')
+  });
+  saneWatch("./site/static/img/icons/*.svg", () => {
+    gulp.start('svg')
+  });
+  saneWatch("./site/**/*", () => {
+    gulp.start('hugo')
+  });
 });
+
+
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
