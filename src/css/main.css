@@ -221,6 +221,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 
 html,
 body {
@@ -382,6 +383,8 @@ body {
   font-size:12px;
 }
 
+=======
+>>>>>>> d00bd73bc35230f486f1731e2c6cd6e67ed26f6b
 #mainGuideImage {
     position: relative;
     margin: 8px 0 0;
@@ -616,6 +619,10 @@ h3.toggleBar.subhead {
 .item-list .item-list-item a:hover .itemName {
     text-decoration: underline
 }
+<<<<<<< HEAD
+=======
+/*! File: Guide/View/v2/steps.less */
+>>>>>>> d00bd73bc35230f486f1731e2c6cd6e67ed26f6b
 
 @media only screen and (max-width: 599px) {
     .steps-container {
@@ -1046,4 +1053,7 @@ h3.toggleBar.subhead {
 .column-card>h3:first-of-type {
     margin-top: 0
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d00bd73bc35230f486f1731e2c6cd6e67ed26f6b
