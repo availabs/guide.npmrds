@@ -7,5 +7,5 @@ image: /img/blog/create-route3b.jpg
 guideNumber: 2
 ---
 
-In this guide you'll learn how to create a route
+This guide is coming soon
 
