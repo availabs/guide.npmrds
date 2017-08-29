@@ -1,14 +1,14 @@
 {{ partial "head" . }}
 {{ partial "nav" . }}
   <div class='container'>
-    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
+    <h2 class="guide-title">{{.Title}}</h2>
       <div class="flex justify-between grey-3">
       </div>
       <div class="cms mw6">
         <p>{{ .Description }}</p>
         {{ .Content }}
         {{ if .Params.image }}
-          <img class='img-fluid' src="{{ .Params.image }}" alt="{{ .Title }}" />
+          <img class='img-fluid' src="{{ .Params.image }}"/>
         {{ end }}
         
       </div>
