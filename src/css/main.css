@@ -331,6 +331,10 @@ body {
   justify-content: center;
 }
 
+.guide-title {
+  margin: 60px;
+}
+
 .guide-step-container {
   padding-bottom: 50px;
   border-bottom: 1px solid #5d5d5d;
