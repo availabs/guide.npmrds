@@ -43,6 +43,7 @@ body {
 .view-grey {
   background: #efefef;
   height: 100%;
+  color: #5d5d5d;
 }
 
 .padded {
@@ -51,7 +52,7 @@ body {
 
 
 .landingView {
-	color: white;
+	color: #efefef;
 	font-family: 'Fira Sans', sans serif;
 }
 
@@ -317,6 +318,10 @@ body {
   flex-direction: column;
   justify-content: center;
   //border: 1px dotted white;
+}
+
+.guide {
+ background-color: #efefef; 
 }
 
 .guide-step {
