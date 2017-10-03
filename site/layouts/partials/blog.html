@@ -1,10 +1,10 @@
 <div class="container">
 	<div class='row'>
-		<div class='col-xs-12'>
-			<h2 class="">Guide</h2>
+		<div class='container col-xs-12'>
+			<h2 class="main-title">The Web-based User Guide for the NPMRDS Tool</h2>
 		</div>
 	</div>
-	<div class='row d-flex align-items-stretch'>
+	<div class='row d-flex align-items-stretch font-color'>
 		
 		{{ range where .Data.Pages "Type" "guide" }}
 			<div class="col-md-6">
@@ -13,8 +13,5 @@
 		{{ end }}
 		
 	</div>
-		<div class="tc">
-			<a href="/guide" class="btn raise">Read more</a>
-		</div>
 	</div>
 </div>
