@@ -1,12 +1,14 @@
 
 <a href=" {{ .Permalink }}" style="text-decoration: none;"> 
 	<div class="white-container">
-
-
-		<h2 class="f3 b lh-title mb1 font-color">{{ .Title }}</h2
-	    >
-		<p class="font-color">{{ .Description }}</p>
-		<p class="link b dib black mb0">Read more →</p>
+					{{ if .Params.image }}
+			          <img class='img-fluid guide-thumbnail-2' src="{{ .Site.BaseURL }}{{ .Params.image }}"/>
+			        {{ end }}
+					<h4 class="li-title font-color">{{ .Title }}</h4
+				    >
+					<p class="font-color">{{ .Description }}</p>
+					<p class="link b dib black mb0">Open this guide →</p>
+					
 
 	</div>
 </a>

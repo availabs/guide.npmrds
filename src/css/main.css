@@ -348,6 +348,10 @@ body {
   //border: 1px dotted white;
 }
 
+.li-title {
+  padding-top: 20px;
+}
+
 .guide {
  background-color: #efefef; 
 }
